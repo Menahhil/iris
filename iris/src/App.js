@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from './footer';
-import './App.css';  // If you're putting the app styles in App.css
+import Footer from './Footers/footer';
+import './App.css';  
 
 function App() {
   return (
