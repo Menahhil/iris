@@ -5,12 +5,25 @@ body {
     padding: 0 1in; 
   }
   
+  /* Responsive margin adjustments */
+  @media (max-width: 1024px) {
+    body {
+      padding: 0 1rem; 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 0 0.5rem; 
+    }
+  }
+  
   /* Navigation Styles */
   nav {
     display: flex;
     justify-content: center;
     gap: 0.75rem;
-    padding: 0.5 0.5rem;
+    padding: 0.5rem;
     border: none;
   }
   
@@ -37,31 +50,31 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 100%; 
-    height: 160px; 
+    width: 100%;
+    height: 160px;
     box-sizing: border-box;
   }
   
   /* Image container and alignment */
   .template-card .header {
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 0.75rem;
-    border:none;
+    border: none;
   }
   
   .template-card img {
     width: 2.5rem;
     height: 3.5rem;
     border-radius: 9999px;
-    border:none;
+    border: none;
   }
   
   .template-card .image-container {
     width: 3rem;
     height: 3rem;
     background-color: #ffffff;
-    border:none;
+    border: none;
     border-radius: 9999px;
     display: flex;
     align-items: center;
@@ -70,14 +83,14 @@ body {
   
   /* Text styles within the template card */
   .template-card h3 {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     font-weight: 500;
     color: #111827;
     margin: 0;
   }
   
   .template-card p {
-    font-size: 0.75rem; 
+    font-size: 0.75rem;
     color: #6b7280;
     margin: 0.5rem 0 0;
   }
@@ -85,11 +98,30 @@ body {
   /* Grid container styles */
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 14px; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
     padding: 1.5rem 0;
   }
+  
   .template-card:hover {
-    background-color: #ffefeb; 
-    transform: scale(1.02); 
+    background-color: #ffefeb;
+    transform: scale(1.02);
   }
+  
+  /* Responsive grid styling */
+  @media (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  }
+  
